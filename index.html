@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Tools - Music, Practice, Learning</title>
+  <meta name="description" content="Free student tools for practice, learning, and skill development.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .student-tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .tool-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      text-align: center;
+      cursor: pointer;
+      transition: all var(--transition-base);
+    }
+    .tool-card:hover {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+      transform: translateY(-4px);
+    }
+    .tool-icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+    .tool-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+    .tool-desc {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+    .main-title {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .main-title h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .main-title p {
+      font-size: 16px;
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+
+<div class="main-title">
+  <h1>Student Tools</h1>
+  <p>Free tools for musicians, students, and learners</p>
+</div>
+
+<div class="student-tools-grid">
+  <div class="tool-card" onclick="window.location.href='music.html'">
+    <div class="tool-icon">🎵</div>
+    <div class="tool-title">Music Tools</div>
+    <div class="tool-desc">Metronome, sheet music creator, and instrument tuner for band and orchestra</div>
+  </div>
+</div>
+
+<div style="text-align: center; padding: 40px 20px; color: var(--text-muted); font-size: 13px;">
+  <a href="contact.html" style="color: var(--accent-cyan); text-decoration: none; margin-right: 12px;">Contact</a> &middot;
+  <a href="terms.html" style="color: var(--accent-cyan); text-decoration: none; margin: 0 12px;">Terms</a> &middot;
+  <a href="privacy.html" style="color: var(--accent-cyan); text-decoration: none; margin-left: 12px;">Privacy</a>
+  <br><br>© 2026 Student Tools
+</div>
+
+</body>
+</html>
